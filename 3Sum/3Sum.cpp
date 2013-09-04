@@ -31,7 +31,8 @@ public:
                 int sum = num[i] + num[j] + num[k];
                 if (sum > 0) j--;
                 else if (sum < 0) i++;
-                else {
+                else
+                {
                     vector<int> triplet;
                     triplet.push_back(num[i]);
                     triplet.push_back(num[j]);
@@ -39,6 +40,9 @@ public:
                     sort(triplet.begin(), triplet.end());
                     if (find(result.begin(), result.end(), triplet) == result.end()) {
                         result.push_back(triplet);
+                        cout << num[i] <<endl;
+                        cout << num[j] <<endl;
+                        cout << num[k] <<endl;
                     }
                     i++;
                     j--;
@@ -50,5 +54,10 @@ public:
 };
 
 int main() {
+    vector<vector<int> > res;
+    int int_array[10]={2,-2,3,4,5,-6,7,8,9,0};
+    vector<int > ainput(int_array,int_array+10);
+    Solution asolution;
+    res = asolution.threeSum(ainput);
     return 0;
 }
