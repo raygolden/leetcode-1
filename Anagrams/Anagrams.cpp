@@ -35,5 +35,10 @@ public:
 };
 
 int main() {
+    const char *args[] = {"abba", "heleh","ooo","foo","lle","\n"};
+    vector<string>  res;
+    vector<string>  ainput(args, args+sizeof(args)/sizeof(args[0]));
+    Solution asolution;
+    asolution.anagrams(ainput);
     return 0;
 }

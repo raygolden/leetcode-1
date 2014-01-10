@@ -15,6 +15,7 @@
 //============================================================================
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Solution
@@ -45,6 +46,7 @@ public:
         for (int i = nRows - 1; i < N; i += L)
         {
             res.push_back(s[i]);
+            cout << s[i] <<endl;
         }
         return res;
     }
@@ -52,5 +54,9 @@ public:
 
 int main()
 {
+    Solution asolution;
+    string s;
+    cin>>s;
+    asolution.convert(s,4);
     return 0;
 }

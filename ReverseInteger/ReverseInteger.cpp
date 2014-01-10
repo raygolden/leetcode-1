@@ -23,6 +23,8 @@
 
 #include <cassert>
 #include <climits>
+#include <iostream>
+
 using namespace std;
 
 class Solution {
@@ -42,5 +44,10 @@ public:
 };
 
 int main() {
+    int i=321;
+    int b;
+    Solution asolution;
+    b = asolution.reverse(i);
+    cout<<b<<endl;
 	return 0;
 }

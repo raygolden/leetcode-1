@@ -33,5 +33,10 @@ public:
 
 int main()
 {
+    int res;
+    int int_array[10]={2,1,3,4,6,3,7,6,9,10};
+    vector<int > ainput(int_array,int_array+10);
+    Solution asolution;
+    res = asolution.maxProfit(ainput);
     return 0;
 }
