@@ -38,5 +38,8 @@ public:
 };
 
 int main() {
+    Solution asolution;
+    string result = asolution.countAndSay(5);
+    cout<<result<<endl;
     return 0;
 }

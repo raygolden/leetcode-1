@@ -41,5 +41,7 @@ public:
 };
 
 int main() {
+    Solution asolution;
+    asolution.combine(5,3);
     return 0;
 }
