@@ -57,5 +57,8 @@ public:
 };
 
 int main() {
+    Solution asolution;
+    bool isnumber=asolution.isNumber("2e10");
+    cout << "the result is:" <<isnumber << endl;
    return 0;
 }
